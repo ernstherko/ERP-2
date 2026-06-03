@@ -1,0 +1,6 @@
+<erp>
+    <gf code="VK" name="Standard">
+        <be code="AG" name ="Angebot"></be>
+        <be code="AU" name ="Auftrag"></be>
+    </gf>
+</erp>

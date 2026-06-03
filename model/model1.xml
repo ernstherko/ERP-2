@@ -1,0 +1,115 @@
+<erp xmlns:rg="urn:erp2:regel">
+    <system>
+        <felder>
+            <artikel></artikel>
+            <beleg>
+                <art></art>
+                <nr></nr>
+            </beleg>
+            <menge>
+                <menge></menge>
+                <einheit></einheit>
+            </menge>
+            <preis>
+                <wert></wert>
+                <menge>
+                    <rg:Regel>bezogen auf die Menge</rg:Regel>
+                </menge>
+                <einheit>
+                    <währung></währung>
+                    <menge></menge>
+                </einheit>
+                <gültigkeit></gültigkeit>
+                <herkunft></herkunft>
+            </preis>
+        </felder>
+        <funktion>
+            <journal>
+                <rg:Regel>Jede Funktion erzeugt einen Jorunaleintrag</rg:Regel>
+                <meldung>
+                    <typen>
+                        <hinweis></hinweis>
+                        <warnung></warnung>
+                        <fehler></fehler>
+                    </typen>
+                    <aufbau>
+                        <nr></nr>
+                        <typ></typ>
+                        <problem>
+                            <rg:Regel>Klare Sprache</rg:Regel>
+                            <rg:Regel>auf Stell (Feld) hinweisen</rg:Regel>
+                        </problem>
+                        <lösung>
+                            <rg:Regel>eine Lösung anbieten</rg:Regel>
+                            <rg:Regel>Selbst machbar oder wer anders</rg:Regel>
+                        </lösung>
+                    </aufbau>
+                </meldung>
+            </journal>
+        </funktion>
+    </system>
+    <gruppen>
+        <adressen></adressen>
+        <artikel></artikel>
+    </gruppen>
+    <konditionen>
+        <lieferkondition></lieferkondition>
+        <zahlungskondition></zahlungskondition>
+        <zahlunsmodalitäten></zahlunsmodalitäten>
+    </konditionen>
+    <stammdaten>
+        <mandant></mandant>
+        <lagerort></lagerort>
+        <lagerplatz></lagerplatz>
+        <firma></firma>
+        <adresse></adresse>
+        <person></person>
+        <artikel></artikel>
+    </stammdaten>
+    <geschäftsfall> 
+        <beleg>
+            <kopf>
+                <adressen></adressen>
+                <personen></personen>
+                <texte></texte>
+            </kopf>
+            <pos>
+                <texte></texte>
+                <struktur>
+                    <pos></pos>
+                    <artikel>
+                        <rg:Regel>
+                            <rg:relaubt>Kann sich auch auf Artikel beziehen</rg:relaubt>
+                            <rg:Bsp>Produktconfig, Artikel die ein Produkt ergeben</rg:Bsp>
+                        </rg:Regel>
+                    </artikel>
+                </struktur>
+                <status>
+                    <rg:Regel>
+                        <rg:erlaubt>Eine Position kann mehrer Stati haben</rg:erlaubt>
+                        <rg:Bsp>Lieferstatus</rg:Bsp>
+                        <rg:Bsp>Rechnungsstatus</rg:Bsp>
+                    </rg:Regel>
+                    <bewegung></bewegung>
+                </status>
+                <beziehung>
+                    <woher>
+                        <rg:Regel>Nachfolger</rg:Regel>
+                    </woher>
+                    <wohin>
+                        <rg:Regel>Verteilung</rg:Regel>
+                    </wohin>
+                </beziehung>
+                <betrag></betrag>
+                <adressen></adressen>
+            </pos>
+            <summen></summen>
+        </beleg>
+        <vertrag>
+            <kopf></kopf>
+            <pos>
+                <laufzeit></laufzeit>
+            </pos>
+        </vertrag>
+    </geschäftsfall>
+</erp>
