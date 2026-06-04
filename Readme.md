@@ -1,4 +1,6 @@
 # ERP#2
+ERP#2 ist ein experimentelles ERP-Datenmodell zum Aufbau eines ERP-Systems mittels Vibe Coding. Ziel sollte es sein, das ein KI aus dem Modell und der Konfiguration ein funktionsfähiges ERP bauen kann.
+
 ## ERP Modell der zweiten Generation
 
 ## ERP Generationen (Oberfläche)

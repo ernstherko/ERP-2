@@ -2,6 +2,7 @@
 <erp xmlns:rg="urn:erp2:regel">
     <system>
         <felder>
+            <!-- Vorgabe für Feldnamen -->
             <artikel></artikel>
             <beleg>
                 <art></art>
@@ -23,6 +24,15 @@
                 <gültigkeit></gültigkeit>
                 <herkunft></herkunft>
             </preis>
+            <name>
+                <rg:Regel>Kurzform - SKS M8 x 20</rg:Regel>
+            </name>
+            <bezeichnung>
+                <rg:Regel>Langform - Sechskanktschraube M8 x 20 mm</rg:Regel>
+            </bezeichnung>
+            <benennung>
+                <rg:Regel>Langform - Sechskanktschraube M8 x 20 mm</rg:Regel>
+            </benennung>
         </felder>
         <funktion>
             <journal>

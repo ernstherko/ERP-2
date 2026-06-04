@@ -4,4 +4,9 @@
         <be code="AG" name ="Angebot"></be>
         <be code="AU" name ="Auftrag"></be>
     </gf>
+    <belege>
+        <!-- Master Beleg für den Verkauf-->
+        <beleg code="VK"></beleg>
+        <beleg code="AU" master="VK"></beleg>
+    </belege>
 </erp>
