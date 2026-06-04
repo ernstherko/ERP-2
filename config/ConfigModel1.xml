@@ -1,12 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <erp>
-    <gf code="VK" name="Standard">
-        <be code="AG" name ="Angebot"></be>
-        <be code="AU" name ="Auftrag"></be>
-    </gf>
+    <artikel>
+        <ar code="ST" name="Basis">
+            <felder>
+                <feld name="nr"></feld>
+                <feld name="bezeichnung"></feld>
+            </felder>
+        </ar>
+        <ar code="HW" master="ST" name="Hardware">
+            <felder>
+                <feld name="hersteller"></feld>
+                <feld name="länge"></feld>
+                <feld name="breite"></feld>
+                <feld name="höhe"></feld>
+                <feld name="gewicht"></feld>
+            </felder>
+        </ar>
+        <ar code="SW" master="ST" name="Software">
+            <feld name="version"></feld>
+            <feld name="lizenzen"></feld>
+        </ar>
+    </artikel>
     <belege>
         <!-- Master Beleg für den Verkauf-->
         <beleg code="VK"></beleg>
         <beleg code="AU" master="VK"></beleg>
     </belege>
+    <!-- gf = Geschäftsfall-->
+    <gf code="VK" name="Standard">
+        <be code="AG" name ="Angebot"></be>
+        <be code="AU" name ="Auftrag"></be>
+    </gf>
+    <funktionen>
+        <nummernkreis></nummernkreis>
+        <preisfindung></preisfindung>
+        <kalkulation>
+            <position></position>
+            <summen>
+                <währungsumrechnung></währungsumrechnung>
+            </summen>
+        </kalkulation>
+        <mengenumrechnung></mengenumrechnung>
+        <statuswechsel>
+            <storno></storno>
+        </statuswechsel>
+        <löschen></löschen>
+        <kopieren></kopieren>
+        <nachfolger></nachfolger>
+        <datumsrechnung></datumsrechnung>
+    </funktionen>
 </erp>

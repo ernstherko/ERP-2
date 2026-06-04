@@ -24,15 +24,18 @@
                 <gültigkeit></gültigkeit>
                 <herkunft></herkunft>
             </preis>
-            <name>
-                <rg:Regel>Kurzform - SKS M8 x 20</rg:Regel>
-            </name>
-            <bezeichnung>
-                <rg:Regel>Langform - Sechskanktschraube M8 x 20 mm</rg:Regel>
-            </bezeichnung>
-            <benennung>
-                <rg:Regel>Langform - Sechskanktschraube M8 x 20 mm</rg:Regel>
-            </benennung>
+            <information>
+                <name>
+                    <rg:Regel>Kurzform - SKS M8 x 20</rg:Regel>
+                </name>
+                <bezeichnung>
+                    <rg:Regel>Langform - Sechskanktschraube M8 x 20 mm</rg:Regel>
+                </bezeichnung>
+                <benennung>
+                    <rg:Regel>Langform - Sechskanktschraube M8 x 20 mm</rg:Regel>
+                </benennung>
+                <beschreibung></beschreibung>
+            </information>
         </felder>
         <funktion>
             <journal>
@@ -101,7 +104,9 @@
                         <rg:Bsp>Lieferstatus</rg:Bsp>
                         <rg:Bsp>Rechnungsstatus</rg:Bsp>
                     </rg:Regel>
-                    <bewegung></bewegung>
+                    <lagerbewegung>
+                        <serienr></serienr>
+                    </lagerbewegung>
                 </status>
                 <beziehung>
                     <woher>
@@ -111,15 +116,26 @@
                         <rg:Regel>Verteilung</rg:Regel>
                     </wohin>
                 </beziehung>
-                <betrag></betrag>
+                <betrag>
+                    <steuern></steuern>
+                </betrag>
                 <adressen></adressen>
             </pos>
             <summen></summen>
+            <finanzbuchung>
+                <rg:Regel>Plan und Ist Töpfe auf der Firma</rg:Regel>
+                <rg:Regel>Mehrwertsteuer</rg:Regel>
+                <rg:Regel>Provision</rg:Regel>
+            </finanzbuchung>
         </beleg>
         <vertrag>
             <kopf></kopf>
             <pos>
-                <laufzeit></laufzeit>
+                <version>
+                    <laufzeit>
+                        <serienr></serienr>
+                    </laufzeit>    
+                </version>
             </pos>
         </vertrag>
     </geschäftsfall>
