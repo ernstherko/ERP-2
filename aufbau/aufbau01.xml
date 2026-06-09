@@ -1,0 +1,46 @@
+<aufbau>
+    <tabellen>
+        <beleg>
+            <gr name="uek">
+                <art></art>
+                <beleg></beleg>
+            </gr>
+        </beleg>
+        <beleg_adressen></beleg_adressen>
+        <beleg_summen></beleg_summen>
+        <belegpos>
+            <gr name="uek">
+                <art></art>
+                <beleg></beleg>
+                <position></position>                
+            </gr>
+            <gr name="menge">
+                <menge></menge>
+                <einheit></einheit>
+            </gr>
+        </belegpos>
+        <belegpos_zuab>
+
+        </belegpos_zuab>
+        <belegpos_betraege>
+            <gr name="uek">
+                <art></art>
+                <beleg></beleg>
+                <position></position>
+                <waehrung></waehrung>
+            </gr>
+            <gr name="kurs">
+                <kurs></kurs>
+                <datum></datum>
+                <basis></basis>
+            </gr>
+            <gr name="betrag">
+                <betrag></betrag>
+                <zuab></zuab>
+                <netto></netto>
+                <mwst></mwst>
+                <brutto></brutto>                
+            </gr>            
+        </belegpos_betraege>
+    </tabellen>
+</aufbau>

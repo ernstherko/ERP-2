@@ -2,6 +2,9 @@
 <erp xmlns:rg="urn:erp2:regel">
     <system>
         <felder>
+            <uek>
+
+            </uek>
             <!-- Vorgabe für Feldnamen -->
             <artikel></artikel>
             <beleg>
@@ -24,6 +27,7 @@
                 <gültigkeit></gültigkeit>
                 <herkunft></herkunft>
             </preis>
+            <betrag></betrag>
             <information>
                 <name>
                     <rg:Regel>Kurzform - SKS M8 x 20</rg:Regel>
@@ -80,6 +84,52 @@
         <person></person>
         <artikel></artikel>
     </stammdaten>
+    <person>
+        <login>
+            <rg:Hinweis>Ein User, kann eine Person sein</rg:Hinweis>
+        </login>
+        <identität>
+            <rg:Bsp>Selbe Person, durch Heirat ändert sich die Identität</rg:Bsp>
+            <rg:Bsp>Aus Datenschutz muss die Identität gelöscht werden</rg:Bsp>
+        </identität>
+        <firma>
+            <adresse>
+                <personendaten>
+                     <rg:Hinweis>Telefon, email</rg:Hinweis>
+                </personendaten>
+            </adresse>
+            <position>
+                <rg:Hinweis>Position in der Firma</rg:Hinweis>
+            </position>
+        </firma>
+    </person>
+    <firma>
+        <typ>
+            <mandant></mandant>
+            <kunde></kunde>
+            <lieferant></lieferant>
+        </typ>
+        <adresse>
+            <finanzfluss>
+                <finanzdimension>
+                    <finazbewegung></finazbewegung>
+                </finanzdimension>
+            </finanzfluss>
+            <materialfluss>
+                <lagerort>
+                    <lagerplatz>
+                        <lagerbewegung>
+                            <seriennr></seriennr>
+                        </lagerbewegung>
+                    </lagerplatz>
+                </lagerort>
+            </materialfluss>
+        </adresse>
+        <personen></personen>
+        <eigentum>
+            <gegenstand></gegenstand>
+        </eigentum>
+    </firma>
     <geschäftsfall> 
         <beleg>
             <kopf>
@@ -122,21 +172,23 @@
                 <adressen></adressen>
             </pos>
             <summen></summen>
-            <finanzbuchung>
+            <finanzbewegung>
                 <rg:Regel>Plan und Ist Töpfe auf der Firma</rg:Regel>
                 <rg:Regel>Mehrwertsteuer</rg:Regel>
                 <rg:Regel>Provision</rg:Regel>
-            </finanzbuchung>
+                <rg:Hinweis>Buchung drückt den Begriff Bewegung/Fluss nicht gut aus</rg:Hinweis>
+            </finanzbewegung>
         </beleg>
         <vertrag>
             <kopf></kopf>
-            <pos>
-                <version>
-                    <laufzeit>
+            <version>
+                <laufzeit>
+                    <pos>
                         <serienr></serienr>
-                    </laufzeit>    
-                </version>
-            </pos>
+                    </pos>
+                    <abrechnung></abrechnung>
+                </laufzeit>    
+            </version>
         </vertrag>
     </geschäftsfall>
 </erp>
